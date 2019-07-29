@@ -15,4 +15,19 @@ class CarCell: UITableViewCell {
     @IBOutlet weak var carDetailedLabel: UILabel!
     @IBOutlet weak var phoneNumber: UIButton!
     
+    var carViewModel: CarViewModel! {
+        didSet {
+            updateUI()
+        }
+    }
+    
+    private func updateUI() {
+        carViewModel.asyncLoad(imageView: carImage)
+        carModelLabel.attributedText = carViewModel.carModelString
+        carDetailedLabel.attributedText = carViewModel.carDetailedInformation
+        if let number = carViewModel.getFormattedPhoneNumber() {
+            phoneNumber.setTitle(number, for: .normal)
+        }
+    }
+    
 }

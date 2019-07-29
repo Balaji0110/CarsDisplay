@@ -32,6 +32,8 @@ class CarsDisplayViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CarCell", for: indexPath) as! CarCell
+        let car = cars[indexPath.row]
+        cell.carViewModel = CarViewModel(car: car)
         return cell
     }
 }

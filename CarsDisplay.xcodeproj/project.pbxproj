@@ -17,6 +17,7 @@
 		43457C3522EE939000887B3A /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43457C3422EE939000887B3A /* Dealer.swift */; };
 		43457C3822EE945B00887B3A /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43457C3722EE945B00887B3A /* NetworkRequest.swift */; };
 		43457C3A22EEA5A700887B3A /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43457C3922EEA5A700887B3A /* CarCell.swift */; };
+		43457C3C22EEB1C300887B3A /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43457C3B22EEB1C300887B3A /* CarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		43457C3422EE939000887B3A /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
 		43457C3722EE945B00887B3A /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		43457C3922EEA5A700887B3A /* CarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		43457C3B22EEB1C300887B3A /* CarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				43457C3722EE945B00887B3A /* NetworkRequest.swift */,
 				43457C2C22EE91AA00887B3A /* CarsDisplayViewController.swift */,
 				43457C3922EEA5A700887B3A /* CarCell.swift */,
+				43457C3B22EEB1C300887B3A /* CarViewModel.swift */,
 				43457C1E22EE916900887B3A /* Main.storyboard */,
 				43457C2122EE916C00887B3A /* Assets.xcassets */,
 				43457C2322EE916C00887B3A /* LaunchScreen.storyboard */,
@@ -165,6 +168,7 @@
 				43457C3822EE945B00887B3A /* NetworkRequest.swift in Sources */,
 				43457C3A22EEA5A700887B3A /* CarCell.swift in Sources */,
 				43457C1B22EE916900887B3A /* AppDelegate.swift in Sources */,
+				43457C3C22EEB1C300887B3A /* CarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
