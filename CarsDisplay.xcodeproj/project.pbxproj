@@ -66,12 +66,12 @@
 		43457C1922EE916900887B3A /* CarsDisplay */ = {
 			isa = PBXGroup;
 			children = (
-				43457C3622EE939500887B3A /* Model */,
 				43457C1A22EE916900887B3A /* AppDelegate.swift */,
 				43457C3722EE945B00887B3A /* NetworkRequest.swift */,
-				43457C2C22EE91AA00887B3A /* CarsDisplayViewController.swift */,
-				43457C3922EEA5A700887B3A /* CarCell.swift */,
-				43457C3B22EEB1C300887B3A /* CarViewModel.swift */,
+				43457C3622EE939500887B3A /* Model */,
+				43457C3F22EF5F6F00887B3A /* Controller */,
+				43457C3E22EF5F5700887B3A /* View */,
+				43457C3D22EF5F4300887B3A /* ViewModel */,
 				43457C1E22EE916900887B3A /* Main.storyboard */,
 				43457C2122EE916C00887B3A /* Assets.xcassets */,
 				43457C2322EE916C00887B3A /* LaunchScreen.storyboard */,
@@ -88,6 +88,30 @@
 				43457C3422EE939000887B3A /* Dealer.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		43457C3D22EF5F4300887B3A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				43457C3B22EEB1C300887B3A /* CarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		43457C3E22EF5F5700887B3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43457C3922EEA5A700887B3A /* CarCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43457C3F22EF5F6F00887B3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43457C2C22EE91AA00887B3A /* CarsDisplayViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
