@@ -43,6 +43,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8R-c6-Gdx">
                                             <rect key="frame" x="184" y="336.5" width="46" height="30"/>
                                             <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="makeCall:" destination="RLe-9a-2rM" eventType="touchUpInside" id="CUH-qo-lCh"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>

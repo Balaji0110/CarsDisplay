@@ -29,5 +29,10 @@ class CarCell: UITableViewCell {
             phoneNumber.setTitle(number, for: .normal)
         }
     }
-    
+    @IBAction func makeCall(_ sender: UIButton) {
+        let number = carViewModel.getPhoneNumber
+        if let url = URL(string: "tel://" + number) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
 }
