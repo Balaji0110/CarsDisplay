@@ -10,7 +10,13 @@ import UIKit
 
 class CarsDisplayViewController: UITableViewController {
     final let url = URL(string: "https://carfax-for-consumers.firebaseio.com/assignment.json")
-    private var cars: [Car] = []
+    private var cars: [Car] = [] {
+        didSet {
+            DispatchQueue.main.async { [weak self] in
+                self?.tableView.reloadData()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +27,11 @@ class CarsDisplayViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.cars.count
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CarCell", for: indexPath) as! CarCell
         return cell
     }
-    */
 }

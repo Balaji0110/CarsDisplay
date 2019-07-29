@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O41-Bh-FV8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U84-XH-FwM">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,32 +10,71 @@
     </dependencies>
     <scenes>
         <!--Cars Display View Controller-->
-        <scene sceneID="Gsb-Or-IdU">
+        <scene sceneID="3i8-nk-tyx">
             <objects>
-                <tableViewController id="O41-Bh-FV8" customClass="CarsDisplayViewController" customModule="CarsDisplay" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tVd-08-aa8">
+                <tableViewController id="U84-XH-FwM" customClass="CarsDisplayViewController" customModule="CarsDisplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="375" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6fS-nJ-b3J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="A3s-xr-88p">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarCell" rowHeight="375" id="RLe-9a-2rM" customClass="CarCell" customModule="DisplayCars" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A3s-xr-88p" id="4dG-qg-Smb">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RLe-9a-2rM" id="ntz-Db-9xN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="374.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yzT-PG-TdU">
+                                            <rect key="frame" x="16" y="16" width="382" height="258.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="6c5-GO-RDM">
+                                            <rect key="frame" x="16" y="284.5" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="NqQ-DG-PE8">
+                                            <rect key="frame" x="16" y="310.5" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8R-c6-Gdx">
+                                            <rect key="frame" x="184" y="336.5" width="46" height="30"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yzT-PG-TdU" firstAttribute="top" secondItem="ntz-Db-9xN" secondAttribute="top" constant="16" id="0h0-9k-TjU"/>
+                                        <constraint firstAttribute="bottom" secondItem="C8R-c6-Gdx" secondAttribute="bottom" constant="8" id="7ZQ-XB-FD3"/>
+                                        <constraint firstItem="6c5-GO-RDM" firstAttribute="top" secondItem="yzT-PG-TdU" secondAttribute="bottom" constant="10" id="SXC-BO-Hn8"/>
+                                        <constraint firstItem="NqQ-DG-PE8" firstAttribute="leading" secondItem="ntz-Db-9xN" secondAttribute="leading" constant="16" id="V0I-iQ-zPf"/>
+                                        <constraint firstAttribute="trailing" secondItem="yzT-PG-TdU" secondAttribute="trailing" constant="16" id="fpc-XF-rIp"/>
+                                        <constraint firstItem="NqQ-DG-PE8" firstAttribute="top" secondItem="6c5-GO-RDM" secondAttribute="bottom" constant="5" id="jva-1c-Oan"/>
+                                        <constraint firstItem="C8R-c6-Gdx" firstAttribute="top" secondItem="NqQ-DG-PE8" secondAttribute="bottom" constant="5" id="qOs-RF-zf3"/>
+                                        <constraint firstItem="C8R-c6-Gdx" firstAttribute="centerX" secondItem="ntz-Db-9xN" secondAttribute="centerX" id="rJd-MB-ktF"/>
+                                        <constraint firstItem="yzT-PG-TdU" firstAttribute="leading" secondItem="ntz-Db-9xN" secondAttribute="leading" constant="16" id="t7A-b9-Xrz"/>
+                                        <constraint firstItem="6c5-GO-RDM" firstAttribute="leading" secondItem="ntz-Db-9xN" secondAttribute="leading" constant="16" id="uJ5-Ch-NR9"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="carDetailedLabel" destination="NqQ-DG-PE8" id="NIz-Yl-kYv"/>
+                                    <outlet property="carImage" destination="yzT-PG-TdU" id="2ne-Uv-FD8"/>
+                                    <outlet property="carModelLabel" destination="6c5-GO-RDM" id="xGP-hn-d0n"/>
+                                    <outlet property="phoneNumber" destination="C8R-c6-Gdx" id="pxI-Px-ZH5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="O41-Bh-FV8" id="60I-TQ-aFF"/>
-                            <outlet property="delegate" destination="O41-Bh-FV8" id="nSL-Z4-F7M"/>
+                            <outlet property="dataSource" destination="U84-XH-FwM" id="3x1-gl-YUu"/>
+                            <outlet property="delegate" destination="U84-XH-FwM" id="hsN-Ds-Riz"/>
                         </connections>
                     </tableView>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G4t-Gx-b6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1T5-pc-A28" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="152"/>
+            <point key="canvasLocation" x="0.0" y="139"/>
         </scene>
     </scenes>
 </document>
