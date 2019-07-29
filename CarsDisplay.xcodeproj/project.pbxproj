@@ -12,6 +12,10 @@
 		43457C2222EE916C00887B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43457C2122EE916C00887B3A /* Assets.xcassets */; };
 		43457C2522EE916C00887B3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43457C2322EE916C00887B3A /* LaunchScreen.storyboard */; };
 		43457C2D22EE91AA00887B3A /* CarsDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43457C2C22EE91AA00887B3A /* CarsDisplayViewController.swift */; };
+		43457C3122EE938400887B3A /* DisplayCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43457C3022EE938300887B3A /* DisplayCars.swift */; };
+		43457C3322EE938A00887B3A /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43457C3222EE938A00887B3A /* Car.swift */; };
+		43457C3522EE939000887B3A /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43457C3422EE939000887B3A /* Dealer.swift */; };
+		43457C3822EE945B00887B3A /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43457C3722EE945B00887B3A /* NetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		43457C2422EE916C00887B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43457C2622EE916C00887B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43457C2C22EE91AA00887B3A /* CarsDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsDisplayViewController.swift; sourceTree = "<group>"; };
+		43457C3022EE938300887B3A /* DisplayCars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCars.swift; sourceTree = "<group>"; };
+		43457C3222EE938A00887B3A /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		43457C3422EE939000887B3A /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
+		43457C3722EE945B00887B3A /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +62,9 @@
 		43457C1922EE916900887B3A /* CarsDisplay */ = {
 			isa = PBXGroup;
 			children = (
+				43457C3622EE939500887B3A /* Model */,
 				43457C1A22EE916900887B3A /* AppDelegate.swift */,
+				43457C3722EE945B00887B3A /* NetworkRequest.swift */,
 				43457C1E22EE916900887B3A /* Main.storyboard */,
 				43457C2122EE916C00887B3A /* Assets.xcassets */,
 				43457C2322EE916C00887B3A /* LaunchScreen.storyboard */,
@@ -62,6 +72,16 @@
 				43457C2C22EE91AA00887B3A /* CarsDisplayViewController.swift */,
 			);
 			path = CarsDisplay;
+			sourceTree = "<group>";
+		};
+		43457C3622EE939500887B3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43457C3022EE938300887B3A /* DisplayCars.swift */,
+				43457C3222EE938A00887B3A /* Car.swift */,
+				43457C3422EE939000887B3A /* Dealer.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43457C3122EE938400887B3A /* DisplayCars.swift in Sources */,
 				43457C2D22EE91AA00887B3A /* CarsDisplayViewController.swift in Sources */,
+				43457C3322EE938A00887B3A /* Car.swift in Sources */,
+				43457C3522EE939000887B3A /* Dealer.swift in Sources */,
+				43457C3822EE945B00887B3A /* NetworkRequest.swift in Sources */,
 				43457C1B22EE916900887B3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
